@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arenata Bali Rental & Tour Services</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="images/logo2_bg.png" type="image/png">
+
+    <!-- Optional: Favicon for Apple devices -->
+    <link rel="apple-touch-icon" href="images/logo2_bg.png">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .hero {
+            background: url('images/hero-bg.jpg') no-repeat center center;
+            background-size: cover;
+            padding: 100px 0;
+            color: black;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+        }
+
+        .contact-section {
+            padding: 80px 0;
+            background-color: #f8f9fa;
+        }
+
+        .contact-section h2 {
+            margin-bottom: 30px;
+            font-size: 2.5rem;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        footer {
+            background-color: #343a40;
+            color: #fff;
+            padding: 20px 0;
+        }
+
+        footer a {
+            color: #fff;
+            font-size: 16px;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #ffc107;
+            text-decoration: underline;
+        }
+
+        footer i {
+            margin-right: 8px;
+        }
+
+        .list-inline {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        .list-inline-item {
+            display: inline-block;
+        }
+
+        .list-inline-item.mx-2 {
+            margin-right: 15px;
+        }
+
+        /* Responsif untuk gambar di Hero Section */
+        .hero img {
+            width: 100%;
+            height: auto;
+        }
+     .carousel-item img {
+        max-height: 75vh; /* Membatasi tinggi maksimum */
+        object-fit: cover; /* Menjaga rasio gambar */
+    }
+
+    .carousel-caption {
+        position: absolute;
+        bottom: 20%;
+        text-align: center;
+    }
+
+    @media (max-width: 768px) {
+        .carousel-caption h2 {
+            font-size: 1.5rem; /* Ukuran teks lebih kecil di layar kecil */
+        }
+        .carousel-caption p a {
+            font-size: 1rem; /* Ukuran tombol lebih kecil di layar kecil */
+        }
+    }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <div class="col-sm-4 col-xs-12">
+					<div id="gtco-logo"><img src="images/logo2.png" width="50" height="50"><a class="navbar-brand" href="#">Arenata Travel Bali <em>.</em></a></div>
+				</div>
+            <!--<a class="navbar-brand" href="#">Arenata Bali Rental & Tours</a>-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+            <img src="images/page1.png" class="d-block w-100" alt="Discover Bali">
+            <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                <h2 class="text-black">Rent a Ride, Discover Bali's Wonders.</h2>
+                <p><a href="https://wa.me/6281337144251" class="btn btn-primary btn-lg">Contact Us</a></p>
+            </div>
+        </div>
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+            <img src="images/page1.png" class="d-block w-100" alt="Explore Bali">
+            <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                <h2 class="text-black">Get Closer to Bali with Our Vehicles</h2>
+                <p><a href="https://wa.me/6281337144251" class="btn btn-primary btn-lg">Contact Us</a></p>
+            </div>
+        </div>
+        <!-- Slide 3 -->
+        <div class="carousel-item">
+            <img src="images/page1.png" class="d-block w-100" alt="Travel Freely">
+            <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                <h2 class="text-black">Travel Freely and Comfortably in Bali.</h2>
+                <p><a href="https://wa.me/6281337144251" class="btn btn-primary btn-lg">Contact Us</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Carousel Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+
+
+    <!-- Services Section -->
+    <section id="services" class="services py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Our Services</h2>
+            <div class="row">
+                <!-- Service 1 -->
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <img src="images/bike.png" class="card-img-top" alt="Motorbike Rental">
+                        <div class="card-body">
+                            <h5 class="card-title">Motorbike Rental</h5>
+                            <p class="card-text">Start From: IDR 60.000/Day</p>
+                            <a href="https://wa.me/6281337144251" class="btn btn-primary">CHAT NOW</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Service 2 -->
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <img src="images/car.png" class="card-img-top" alt="Car Rental">
+                        <div class="card-body">
+                            <h5 class="card-title">Car Rental</h5>
+                            <p class="card-text">Start From: IDR 200.000/Day</p>
+                            <a href="https://wa.me/6281337144251" class="btn btn-primary">CHAT NOW</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Service 3 -->
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <img src="images/tour.png" class="card-img-top" alt="Tour Service">
+                        <div class="card-body">
+                            <h5 class="card-title">Tour Service</h5>
+                            <p class="card-text">Start From: IDR 500.000/Day</p>
+                            <a href="https://wa.me/6281337144251" class="btn btn-primary">CHAT NOW</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Top Tour Package -->
+            <h3 class="text-center mt-5">Top Our Tour Package</h3>
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="images/tour1.png" class="card-img-top" alt="Ubud Tour">
+                        <div class="card-body">
+                            <h5 class="card-title">Ubud Tour</h5>
+                            <p class="card-text">Visit the artistic village of Ubud, including Monkey Forest, Tegalalang Rice Terrace, and Tegenungan Waterfall.</p>
+                            <p class="text-muted">Price: IDR 600.000/Day</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="images/tour1.png" class="card-img-top" alt="Nusa Dua Tour">
+                        <div class="card-body">
+                            <h5 class="card-title">Nusa Dua Tour</h5>
+                            <p class="card-text">Enjoy pristine beaches and water sports activities at Nusa Dua, plus a visit to Uluwatu Temple.</p>
+                            <p class="text-muted">Price: IDR 700.000/Day</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="images/tour1.png" class="card-img-top" alt="Sunset Tour">
+                        <div class="card-body">
+                            <h5 class="card-title">Sunset Tour</h5>
+                            <p class="card-text">Witness Bali's stunning sunset views at Tanah Lot or Jimbaran Beach while enjoying a seafood dinner.</p>
+                            <p class="text-muted">Price: IDR 800.000/Day</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ 
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Our Portfolio</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <img src="images/img_1.jpg" class="img-fluid" alt="Portfolio Image 1">
+                </div>
+                <div class="col-md-4 mb-4">
+                    <img src="images/img_2.jpg" class="img-fluid" alt="Portfolio Image 2">
+                </div>
+                <div class="col-md-4 mb-4">
+                    <img src="images/img_3.jpg" class="img-fluid" alt="Portfolio Image 3">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <!-- Contact Section -->
+    <div id="contact" class="contact-section text-center">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Have questions or want to make a reservation? Get in touch with us!</p>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="contact-form">
+                        <input type="text" id="name" placeholder="Your Name">
+                        <input type="email" id="email" placeholder="Your Email">
+                        <textarea id="message" placeholder="Your Message" rows="5"></textarea>
+                        <button class="btn btn-primary" onclick="sendMessage()">Send Message</button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="https://maps.app.goo.gl/PSi9gE5ewnXEG5sn7" target="_blank">
+                                <i class="fas fa-map-marker-alt"></i> Jl. wana segara Gg. Jepun I No.4 Kuta-Bali
+                            </a>
+                        </li>
+                        <li><a href="https://wa.me/6281337144251" target="_blank"><i class="fas fa-phone-alt"></i> +62 813-3741-4421 </a></li>
+                        <li><i class="fas fa-envelope"></i> arenatatravelbali@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="container">
+            <h4>Follow Us</h4>
+            <ul class="list-inline">
+                <li class="list-inline-item mx-2">
+                    <a href="https://instagram.com/arenatatravelbali" target="_blank">
+                        <i class="fab fa-instagram"></i> arenatatravelbali
+                    </a>
+                </li>
+                <li class="list-inline-item mx-2">
+                    <a href="https://facebook.com/arenatatravelbali" target="_blank">
+                        <i class="fab fa-facebook"></i> arenatatravelbali
+                    </a>
+                </li>
+                <li class="list-inline-item mx-2">
+                    <a href="https://wa.me/6281337144251" target="_blank">
+                        <i class="fab fa-whatsapp"></i> +6281337144251
+                    </a>
+                </li>
+            </ul>
+            <p>&copy; 2024 Arenata Bali Rental & Tours. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
